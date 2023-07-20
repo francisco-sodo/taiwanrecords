@@ -1135,6 +1135,67 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
 
 
 /* -------PRODUCTOR PAGE------- */
+.productor__container-tw{
+    background-color: #000;
+    padding-top:120px;
+    height: auto;
+}
+.premios img{
+    mix-blend-mode:difference;
+}
+.johny-info a i{
+    color:#000;
+}
+.johny-info a i:hover{
+    color: red;
+}
+.johny-carousel img{
+    height: 600px;
+    object-fit: cover;
+}
+/* -------MEDIA QUERIES PRODUCTOR PAGE 1400px------- */
+@media screen and (max-width:1400px) {
+    .johny-carousel img{
+        height: 743px;
+    }
+}
+/* -------MEDIA QUERIES PRODUCTOR PAGE 1200px------- */
+@media screen and (max-width:1200px) {
+    .johny-carousel img{
+        height: 840px;
+    }
+}
+/* -------MEDIA QUERIES PRODUCTOR PAGE 9920px------- */
+@media screen and (max-width:992px) {
+    .johny-carousel img{
+        height: 500px;
+        object-fit: contain;
+    }
+}
+/* -------MEDIA QUERIES PRODUCTOR PAGE 768px------- */
+@media screen and (max-width:768px) {
+    .premios img{
+        width: 75%;
+    }
+    .premios .col .d-flex div{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* -------MEDIA QUERIES PRODUCTOR PAGE 470px------- */
+@media screen and (max-width:450px) {
+    .johny-info-text{
+        padding: 20px !important;
+    }
+    .johny-info-text p{
+        font-size: .9rem;
+    }
+}
+
+
+
+
+
 /* -------ARTISTAS PAGE------- */
 
 
