@@ -85,38 +85,41 @@ a {
     margin-top: 100px;
     width: 100%;
     overflow: hidden;
-    height: calc(100vh - 100px);
+    height: 100vh;
+    /* background-color: red; */
 }
 
-/* pensado para ser slider animado */
-.hero__img-slider {
-    display: flex;
-    flex-wrap: nowrap;
+
+.hero__container-video{
+    width:auto;
+    height: 60%;
+    overflow: hidden;
+}
+
+.hero__container-video video{
     width: 100%;
     height: auto;
-    cursor: grab;
-}
-
-.hero__img-slider img {
-    max-width: 400px;
 }
 
 .hero__title {
-    height: calc(100vh - 100px - 400px);
+    height: calc(100vh - 100px - 60%);
     min-height: 200px;
+    min-width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* position: absolute; */
+    /* z-index: 10; */
 }
 
-.h1_home {
+.hero__title .h1_home {
     font-family: 'blank-river';
     font-size: 82px;
     font-weight: lighter;
     padding: 10px 20px;
     cursor: default;
-    color: #000;
+    color: #000000;
     text-align: center;
 }
 
@@ -135,6 +138,10 @@ header .hero__container .hero__title .social-icons a i {
 
 header .hero__container .hero__title .social-icons a i:hover {
     background-color: yellow;
+}
+
+.hero__container-img{
+    display: none;
 }
 
 
@@ -393,10 +400,21 @@ main .loNuevo,
     gap: 5px;
 }
 
-.artistas__container .gallery__container img {
-    width: 260px;
-    cursor: pointer;
+.artistas__container .gallery__container figure {
+   overflow: hidden;
+   width: 260px;
+   margin: 0;
 }
+
+.artistas__container .gallery__container figure img {
+    width: 100%;
+    transition: all .5s;  
+}
+
+.artistas__container .gallery__container figure img:hover {
+    scale: 1.1;
+}
+
 
 
 
@@ -719,16 +737,17 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
 
 
     /* HERO */
-    .hero__container {
+    /* .hero__container {
         margin-top: 0;
-    }
+    } */
 
-    .hero__img-slider img {
-        max-width: 340px;
+    .hero__container-video {
+        height: 50%;
     }
 
     .hero__title {
-        height: calc(100vh - 100px - 340px);
+        height: calc(100vh - 100px - 50%);
+       
     }
 
 
@@ -805,9 +824,7 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
 @media screen and (max-width:900px) {
 
     /* HERO index */
-    header .hero__container .hero__title .social-icons a i {
-        font-size: 30px;
-    }
+    
 
     /* LO NUEVO index */
     .loNuevo__container {
@@ -895,23 +912,34 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
 @media screen and (max-width:630px) {
 
     /* HERO */
+   
+    .hero__container-video{
+        display: none;
+    }
     .hero__container {
+        width: 100%;
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         height: calc(100vh - 60px);
-    }
-
-    .hero__img-slider {
-        flex-grow: 2;
-    }
-
-    .hero__img-slider img {
+        background-image: url("../img/hero-cover.jpg");
         object-fit: cover;
-        min-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    .hero__title {
-        flex-grow: 1;
+    .hero__title .h1_home { 
+        font-size: 68px;
+        padding: 10px 20px;
+        color: #ffffff; 
+    } 
+    header .hero__container .hero__title .social-icons a i {
+        color: #ffffff;
+    }
+    header .hero__container .hero__title .social-icons a i:hover {
+        background-color: yellow;
+        color: #000;
     }
 
     /* NOSOTROS index */
@@ -942,10 +970,11 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
     .artistas__container .text__container {
         width: 100%;
     }
+    
 
-    .artistas__container .gallery__container img {
+    .artistas__container .gallery__container figure{
         min-width: 100%;
-        padding: 0 40px;
+        padding: 0 10px;
     }
 
     /* CONTACTO index */
@@ -994,15 +1023,16 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
     } */
 
     /* HERO */
-    .h1_home {
-        font-size: 60px;
+    .hero__title .h1_home {
+        font-size: 80px;
         padding: 10px 30px;
     }
+    
 
     /* NOSOTROS */
     .nosotros {
         height: 380px;
-        padding: 30px 20px 40px 20px;
+        padding: 0px 20px 0px 20px;
     }
 
     .nosotros .container-tw .nosotros__container p {
@@ -1068,6 +1098,21 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
         justify-content: center;
     }
 
+
+     /* CONTACTO */
+     .form__container{
+        background-color: unset;
+     }
+    
+     .form__container form {
+        max-width: 300px;
+    }
+
+    .form__container form textarea {
+        margin-bottom: 10px;
+        width: auto;
+    }
+
     /* FOOTER */
     footer {
 
@@ -1098,10 +1143,10 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
         gap: 5px;
     }
 
-    .form__container form textarea {
+    /* .form__container form textarea {
         margin-bottom: 10px;
         width: auto;
-    }
+    } */
 
 
 
@@ -1288,6 +1333,9 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
     text-align: center;
     cursor: default;
 }
+.main__artistas .artistas .container-tw .artistas__grid .img__box a .artista__caption .artista__caption-name p {
+    color: rgba(255, 255, 255, 0.428);
+}
 
 
 /* -------TIENDA PAGE------- */
@@ -1395,6 +1443,7 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .bar__gallery__pic-img1 {
@@ -1417,6 +1466,7 @@ footer .footer__container .footer__links-container .social-icons a i:hover {
 .bar__gallery__pic {
     position: relative;
     cursor: pointer;
+    margin: 0;
 }
 
 .bar__gallery__pic::before {
