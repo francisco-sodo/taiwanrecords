@@ -111,7 +111,7 @@ nav div div ul li .nav-link {
     font-weight: lighter;
     padding: 10px 20px;
     cursor: default;
-    color: #000000;
+    color: #ff0000;
     text-align: center;
 }
 
@@ -1452,7 +1452,7 @@ footer .footer__container-copy {
 }
 
 .main__bar .bar .container-tw .bar__grid .bar__container-gallery .bar__grid-gallery .bar__gallery__pic-img2 {
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .main__bar .bar .container-tw .bar__grid .bar__container-gallery .bar__grid-gallery .bar__gallery__pic-img4 {
