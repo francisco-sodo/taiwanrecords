@@ -1099,6 +1099,10 @@ footer .footer__container-copy {
 
 
 /* -------------- ESTILOS GENERALES EN LAS PAGES -------------- */
+.pages{
+    width: 100%;
+    height: auto;
+}
 
 /* titulos principales en las pages */
 .main__titles-pages {
@@ -1138,46 +1142,46 @@ footer .footer__container-copy {
 
 
 /* -------PRODUCTOR PAGE------- */
-.main_productor .productor__container-tw {
+.main__productor .productor__container-tw {
     background-color: #000;
     padding-top: 120px;
     height: auto;
 }
 
-.main_productor .productor__container-tw .container .premios div div div img {
+.main__productor .productor__container-tw .container .premios div div div img {
     mix-blend-mode: difference;
 }
 
-.main_productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i {
+.main__productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i {
     color: #000;
 }
 
-.main_productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i:hover {
+.main__productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i:hover {
     color: red;
 }
 
-.main_productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+.main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
     height: 600px;
     object-fit: cover;
 }
 
 /* -------MEDIA QUERIES PRODUCTOR PAGE 1400px------- */
 @media screen and (max-width:1400px) {
-    .main_productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+    .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
         height: 743px;
     }
 }
 
 /* -------MEDIA QUERIES PRODUCTOR PAGE 1200px------- */
 @media screen and (max-width:1200px) {
-    .main_productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+    .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
         height: 840px;
     }
 }
 
-/* -------MEDIA QUERIES PRODUCTOR PAGE 9920px------- */
+/* -------MEDIA QUERIES PRODUCTOR PAGE 992px------- */
 @media screen and (max-width:992px) {
-    .main_productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+    .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
         height: 500px;
         object-fit: contain;
     }
@@ -1185,11 +1189,11 @@ footer .footer__container-copy {
 
 /* -------MEDIA QUERIES PRODUCTOR PAGE 768px------- */
 @media screen and (max-width:768px) {
-    .main_productor .productor__container-tw .container .premios div div div img .premios img {
+    .main__productor .productor__container-tw .container .premios div div div img {
         width: 75%;
     }
 
-    .main_productor .productor__container-tw .container .premios div div div {
+    .main__productor .productor__container-tw .container .premios div div div {
         display: flex;
         justify-content: center;
     }
@@ -1197,11 +1201,11 @@ footer .footer__container-copy {
 
 /* -------MEDIA QUERIES PRODUCTOR PAGE 470px------- */
 @media screen and (max-width:450px) {
-    .main_productor .productor__container-tw .container .johny-info .johny-info-text {
+    .main__productor .productor__container-tw .container .johny-info .johny-info-text {
         padding: 20px !important;
     }
 
-    .main_productor .productor__container-tw .container .johny-info .johny-info-text p {
+    .main__productor .productor__container-tw .container .johny-info .johny-info-text p {
         font-size: .9rem;
     }
 }

@@ -561,3 +561,103 @@
 
 }
 
+
+
+// ////////////////////////////////////////////////////////////
+/* --------------MEDIA QUERIES PRODUCTOR PAGE-------------- */
+// ////////////////////////////////////////////////////////////
+
+
+
+/* -------MEDIA QUERIES PRODUCTOR PAGE 1400px------- */
+@media screen and (max-width:1400px) {
+    .main__productor {
+        .productor__container-tw {
+            .container {
+                .johny-info {
+                    div {
+                        .johny-carousel {
+                            div {
+                                img {
+                                    height: 840px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------MEDIA QUERIES PRODUCTOR PAGE 992px------- */
+@media screen and (max-width:992px) {
+    .main__productor {
+        .productor__container-tw {
+            .container {
+                .johny-info {
+                    div {
+                        .johny-carousel {
+                            div {
+                                img {
+                                    height: 500px;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------MEDIA QUERIES PRODUCTOR PAGE 768px------- */
+@media screen and (max-width:768px) {
+    .main__productor {
+        .productor__container-tw {
+            .container {
+                .premios {
+                    div {
+                        div {
+                            div {
+                                display: flex;
+                                justify-content: center;
+
+                                img {
+                                    width: 75%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -------MEDIA QUERIES PRODUCTOR PAGE 450px------- */
+@media screen and (max-width:450px) {
+    .main__productor {
+        .productor__container-tw {
+            .container {
+                .johny-info {
+                    .johny-info-text {
+                        padding: 20px !important;
+
+                        p {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ////////////////////////////////////////////////////////////
+/* --------------MEDIA QUERIES TIENDA PAGE-------------- */
+// ////////////////////////////////////////////////////////////
+
