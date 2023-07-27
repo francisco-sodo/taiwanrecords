@@ -36,44 +36,40 @@ nav {
     height: 100px;
     box-shadow: 0px 3px 12px -3px rgba(0, 0, 0, 0.1);
 }
-
+/* clases BOOTSTRAP pisadas */
 nav div .navbar-brand {
     font-family: 'blank-river', sans-serif;
 }
-
 nav div div ul li .btn {
     margin-left: 10px;
     font-size: .8rem;
 }
-
 nav div div ul li .btn:hover {
     background-color: yellow;
     color: #000;
     border: 1px solid yellow;
 }
-
 nav div div ul li .btn:focus {
     box-shadow: none;
     background-color: #000;
     color: #fff;
 }
-
 nav div .navbar-toggler {
     border: none;
 }
-
 nav div .navbar-toggler:hover {
     border: none;
     background-color: yellow;
 }
-
 nav div .navbar-toggler:focus {
     box-shadow: none;
 }
-
 nav div div ul li .nav-link {
     font-size: .9rem;
 }
+/* fin clases BOOTSTRAP pisadas */
+
+
 
 /* Hero container seccion */
 

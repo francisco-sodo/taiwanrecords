@@ -1,0 +1,347 @@
+.main__home {
+    .nosotros {
+        width: 100%;
+        padding: 0 50px 100px 50px;
+        margin: 0 auto;
+        height: 480px;
+        position: sticky;
+        top: 100px;
+        left: 0;
+        z-index: 0;
+        background-color: #fff;
+
+        .container-tw {
+            padding: 0;
+
+            .section__titles {
+                margin-bottom: 60px;
+            }
+
+            .nosotros__container {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+
+                p {
+                    width: 600px;
+                    min-width: 350px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    .loNuevo {
+        background-color: #000;
+        color: #fff;
+        z-index: 2;
+
+        .container-tw {
+            .loNuevo__container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .text__container {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    margin-right: 10px;
+
+                    p {
+                        line-height: 1.3rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .videos__container {
+                    width: 70%;
+                    padding: 20px;
+                    background-color: rgb(14, 14, 14);
+                    margin: 20px;
+
+                    .loNuevo-video {
+                        width: 100%;
+                        height: 412px;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .artistas {
+        background-color: #fff;
+        z-index: 2;
+
+        .container-tw {
+            .artistas__container {
+                width: 100%;
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+                align-items: center;
+
+                .text__container {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    order: 2;
+                    align-items: end;
+
+                    .section__subtitles {
+                        text-align: right;
+                    }
+
+                    p {
+                        line-height: 1.3rem;
+                        text-align: right;
+                        font-weight: 400;
+                    }
+
+                    a {
+                        margin-top: 20px;
+
+                        &:hover {
+                            background-color: yellow;
+                            color: #000;
+                        }
+                    }
+
+
+                }
+
+                .gallery__container {
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+
+                    figure {
+                        overflow: hidden;
+                        width: 260px;
+                        margin: 0;
+
+                        img {
+                            width: 100%;
+                            transition: all .5s;
+
+                            &:hover {
+                                scale: 1.1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .servicios {
+        background-color: #fff;
+        z-index: 2;
+
+        .container-tw {
+            .servicios__container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: stretch;
+                margin: 0 auto;
+
+                .servicios-card {
+                    width: 260px;
+                    min-height: 420px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    background-color: yellow;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: rgb(255, 247, 0);
+                    }
+
+                    .card-img {
+                        img {
+                            width: 100%;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                        }
+                    }
+
+                    .card-text {
+                        padding: 20px;
+                        height: 100%;
+                        position: relative;
+
+                        .section__subtitles {
+                            font-size: 1rem;
+                            letter-spacing: unset;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #000;
+                        }
+
+                        p {
+                            font-size: .9rem;
+                            padding-bottom: 50px;
+                        }
+
+                        a {
+                            font-size: .8rem;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                            color: #000;
+                            position: absolute;
+                            bottom: 0;
+                            padding: 5px 12px;
+                            border-radius: 5px;
+                            border: 1px solid #000;
+
+                            &:hover {
+                                color: yellow;
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .tienda {
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../img/tienda-cover-img01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+
+        .container-tw {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+
+
+    .bar {
+        background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../img/bar-cover-img01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: sticky;
+        top: 100px;
+        z-index: 2;
+
+        .container-tw {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+
+
+    .contacto {
+        background-color: yellow;
+        z-index: 5;
+        .container-tw{
+            .contacto__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .contacto_container-info {
+                    width: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .logo-font {
+                        font-family: 'blank-river';
+                        font-size: 2.5rem;
+                        font-weight: lighter;
+                    }
+                    .social-icons{
+                        a{
+                            i{
+                                color: #000;
+                                margin-top: 50px;
+                                &:hover {
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .form__container {
+                    padding: 30px;
+                    background-color: rgb(230, 230, 0);
+                    border-radius: 5px;
+                    form {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        div{
+                            input[type="text"],
+                            input[type="email"] {
+                            border: none;
+                            height: 35px;
+                            border-radius: 5px;
+                            width: 100%;
+                            margin-top: 5px;
+                            font-size: 1rem;
+                            padding-left: 10px;
+                        }
+                        }
+
+                        div{
+                            h4 {
+                                font-weight: 600;
+                                font-size: .9rem;
+                            }
+                            select {
+                                background-color: rgba(0, 0, 0, 0.569);
+                                color: #fff;
+                                border: none;
+                                padding: 5px;
+                                border-radius: 5px;
+                                margin-top: 5px;
+                            }
+                        }
+                        textarea {
+                            margin-bottom: 20px;
+                            width: 350px;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 10px;
+                        }
+                        input[type="submit"] {
+                            border: none;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #fff;
+                                color: #000;
+                                outline: 1px solid #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
