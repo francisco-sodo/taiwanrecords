@@ -18,6 +18,7 @@
 html {
     body {
         font-family: 'Lato', 'blank-river', sans-serif;
+
         a {
             text-decoration: none;
         }
@@ -131,8 +132,9 @@ main {
         padding: 0 50px 0 50px;
     }
 }
+
 /* recuadros con informacion en secciones Tienda y Bar del index */
-.main__home{
+.main__home {
     .info-box {
         width: 420px;
         min-width: 350px;
@@ -142,10 +144,12 @@ main {
         background-color: rgba(255, 255, 255, 0.7);
         padding: 40px;
         border-radius: 5px;
+
         h3 {
             font-size: 1rem;
             font-weight: 600;
         }
+
         p {
             font-size: 1rem;
         }
@@ -158,30 +162,37 @@ nav {
         .navbar-brand {
             font-family: 'blank-river', sans-serif;
         }
+
         .navbar-toggler {
             box-shadow: none;
             border: none;
-            &:hover{
-                 background-color: yellow;
-                &:focus{
-                box-shadow: none;
+
+            &:hover {
+                background-color: yellow;
+
+                &:focus {
+                    box-shadow: none;
                 }
             }
         }
-        div{
-            ul{
-                li{
-                    .nav-link{
+
+        div {
+            ul {
+                li {
+                    .nav-link {
                         font-size: .9rem;
                     }
-                    .btn{
+
+                    .btn {
                         margin-left: 10px;
                         font-size: .8rem;
-                        &:hover{
+
+                        &:hover {
                             background-color: yellow;
                             color: #000;
                             border: 1px solid yellow;
-                            &:focus{
+
+                            &:focus {
                                 box-shadow: none;
                                 background-color: #000;
                                 border: 1px solid #000;
@@ -196,3 +207,35 @@ nav {
 }
 
 
+/* -------------- ESTILOS GENERALES EN LAS PAGES -------------- */
+
+/* titulos principales en las pages */
+.main__titles-pages {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: yellow;
+        padding: 5px;
+    }
+}
+
+/* titulos secundarios en las pages */
+.secundary__titles-pages {
+    font-size: 1.5rem;
+}
+
+.terciary__titles-pages {
+    font-weight: 400;
+    font-size: .8rem;
+    color: #363636;
+    text-transform: uppercase;
+}

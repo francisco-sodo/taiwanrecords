@@ -774,7 +774,7 @@ footer .footer__container-copy {
 
 @media screen and (max-width:900px) {
 
-    /* HERO index */
+    
 
 
     /* LO NUEVO index */
@@ -834,7 +834,7 @@ footer .footer__container-copy {
     }
 
     /* CONTACTO index */
-    .main__home .contacto .container-tw .contacto__container .contacto_container-info P {
+    .main__home .contacto .container-tw .contacto__container .contacto_container-info p {
         font-size: .8rem;
     }
 
