@@ -50,7 +50,7 @@
             .container-tw {
                 .nosotros__container {
                     p {
-                        font-size: 1rem;
+                        font-size: nth($font-size, 4);
                     }
                 }
             }
@@ -58,7 +58,7 @@
 
         /* TIENDA Y BAR index */
         .info-box {
-            font-size: .9rem;
+            font-size: nth($font-size, 3);
             width: 400px;
         }
 
@@ -73,24 +73,24 @@
     /* -- GENERALES index -- */
 
     .section__subtitles {
-        font-size: 1rem;
+        font-size: nth($font-size, 4);
     }
 
     /* titulos en tienda y bar del index */
     .section__titles-b {
-        font-size: 3rem;
+        font-size: nth($font-size, 10);
     }
 
     .btn-l {
         min-width: 120px;
         padding: 12px 16px;
-        font-size: 1rem;
+        font-size: nth($font-size, 4);
     }
 
     .btn-m {
         min-width: 100px;
         padding: 10px 12px;
-        font-size: .9rem;
+        font-size: nth($font-size, 3);
     }
 
 }
@@ -106,7 +106,7 @@
 
             div {
                 .ul-bg {
-                    background-color: yellow;
+                    background-color: nth($primary-colors, 1);
                     text-align: center;
                     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
 
@@ -114,7 +114,7 @@
                         li {
                             .btn {
                                 &:hover {
-                                    border: 1px solid #fff;
+                                    border: 1px solid nth($primary-colors, 3);
                                 }
                             }
                         }
@@ -146,8 +146,8 @@
                         gap: 5px;
 
                         p {
-                            line-height: 1rem;
-                            font-size: .8rem;
+                            line-height: 1em;
+                            font-size: nth($font-size, 2);
                         }
                     }
 
@@ -183,8 +183,8 @@
                         }
 
                         p {
-                            line-height: 1rem;
-                            font-size: .8rem;
+                            line-height: 1em;
+                            font-size: nth($font-size, 2);
                             text-align: left;
                         }
                     }
@@ -202,7 +202,7 @@
                 .contacto__container {
                     .contacto_container-info {
                         p {
-                            font-size: .8rem;
+                            font-size: nth($font-size, 2);
                         }
                     }
                 }
@@ -282,17 +282,17 @@
                 .h1_home {
                     font-size: 68px;
                     padding: 10px 20px;
-                    color: yellow;
+                    color: nth($primary-colors, 1);
                 }
 
                 .social-icons {
                     a {
                         i {
-                            background-color: yellow;
-                            color: #000;
+                            background-color: nth($primary-colors, 1);
+                            color: nth($primary-colors, 2);
 
                             &:hover {
-                                background-color: #fff;
+                                background-color: nth($primary-colors, 3);
                             }
                         }
                     }
@@ -397,7 +397,7 @@
         }
 
         .footer__container-copy {
-            font-size: .7rem;
+            font-size: nth($font-size, 1);
         }
     }
 }
@@ -412,17 +412,17 @@
 
     /* titulos principales en index */
     .section__titles {
-        font-size: 1.2rem;
+        font-size: nth($font-size, 5);
         margin: 10px 0 40px 0;
     }
 
     .section__subtitles {
-        font-size: .9rem;
+        font-size: nth($font-size, 3);
     }
 
     /* titulos en tienda y bar del index */
     .section__titles-b {
-        font-size: 2rem;
+        font-size: nth($font-size, 8);
     }
 
     main {
@@ -460,7 +460,7 @@
                 .nosotros__container {
                     p {
                         min-width: 350px;
-                        font-size: .9rem;
+                        font-size: nth($font-size, 3);
                     }
                 }
             }
@@ -494,14 +494,14 @@
 
         /* TIENDA */
         .tienda {
-            .container-tw {
+            .container-tw .container-tw--flex {
                 justify-content: center;
             }
         }
 
         /* BAR */
         .bar {
-            .container-tw {
+            .container-tw .container-tw--flex {
                 justify-content: center;
             }
         }
@@ -542,7 +542,7 @@
         }
 
         .footer__container-copy {
-            font-size: .7rem;
+            font-size: nth($font-size, 1);
         }
     }
 
@@ -666,7 +666,7 @@
                         padding: 20px !important;
 
                         p {
-                            font-size: .9rem;
+                            font-size: nth($font-size, 3);
                         }
                     }
                 }
@@ -773,7 +773,7 @@
                         justify-content: start;
 
                         .secundary__titles-pages {
-                            font-size: 1rem;
+                            font-size: nth($font-size, 4);
 
                             span {
                                 display: none;
@@ -814,22 +814,22 @@
                             padding: 20px;
 
                             .secundary__titles-pages {
-                                font-size: 1.2rem;
+                                font-size: nth($font-size, 5);
                             }
 
                             a {
                                 margin-top: 15px;
                                 padding: 8px 12px;
-                                font-size: .9rem;
+                                font-size: nth($font-size, 3);
 
                                 i {
-                                    font-size: 1.3rem;
+                                    font-size: nth($font-size, 10);
                                 }
                             }
 
                             p {
                                 margin-top: 10px;
-                                font-size: .9rem;
+                                font-size: nth($font-size, 3);
                             }
                         }
 
@@ -951,16 +951,16 @@
                             padding: 10px;
 
                             .secundary__titles-pages {
-                                font-size: 1rem;
+                                font-size: nth($font-size, 4);
                             }
 
                             p {
                                 margin-top: 10px;
-                                font-size: .8rem;
+                                font-size: nth($font-size, 2);
                             }
 
                             a {
-                                font-size: .9rem;
+                                font-size: nth($font-size, 3);
                                 width: 100%;
                                 justify-content: center;
                             }

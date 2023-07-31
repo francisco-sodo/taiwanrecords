@@ -45,21 +45,21 @@ nav div div ul li .btn {
     font-size: .8rem;
 }
 nav div div ul li .btn:hover {
-    background-color: yellow;
-    color: #000;
-    border: 1px solid yellow;
+    background-color: nth($primary-colors, 1);
+    color: nth($primary-colors, 2);
+    border: 1px solid nth($primary-colors, 1);
 }
 nav div div ul li .btn:focus {
     box-shadow: none;
-    background-color: #000;
-    color: #fff;
+    background-color: nth($primary-colors, 2);
+    color: nth($primary-colors, 3);
 }
 nav div .navbar-toggler {
     border: none;
 }
 nav div .navbar-toggler:hover {
     border: none;
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
 }
 nav div .navbar-toggler:focus {
     box-shadow: none;
@@ -112,7 +112,7 @@ nav div div ul li .nav-link {
 }
 
 .header .hero__container .hero__title .h1_home::selection {
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
 }
 
 .header .hero__container .hero__title .social-icons {
@@ -125,11 +125,11 @@ nav div div ul li .nav-link {
 
 .header .hero__container .hero__title .social-icons a i {
     font-size: 40px;
-    color: #000;
+    color: nth($primary-colors, 2);
 }
 
 .header .hero__container .hero__title .social-icons a i:hover {
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
 }
 
 
@@ -177,8 +177,8 @@ nav div div ul li .nav-link {
     width: fit-content;
     min-width: 150px;
     padding: 16px 22px;
-    background-color: yellow;
-    color: #000;
+    background-color: nth($primary-colors, 1);
+    color: nth($primary-colors, 2);
     border-radius: 5px;
     text-align: center;
     font-size: 1.3rem;
@@ -195,8 +195,8 @@ nav div div ul li .nav-link {
     width: fit-content;
     min-width: 150px;
     padding: 12px 18px;
-    background-color: #000;
-    color: #fff;
+    background-color: nth($primary-colors, 2);
+    color: nth($primary-colors, 3);
     border-radius: 5px;
     text-align: center;
     font-size: 1.1rem;
@@ -207,8 +207,8 @@ nav div div ul li .nav-link {
     width: fit-content;
     min-width: 100px;
     padding: 8px 14px;
-    background-color: #000;
-    color: #fff;
+    background-color: nth($primary-colors, 2);
+    color: nth($primary-colors, 3);
     border-radius: 5px;
     text-align: center;
     font-size: .8rem;
@@ -250,7 +250,7 @@ main .loNuevo,
     top: 100px;
     left: 0;
     z-index: 0;
-    background-color: #fff;
+    background-color: nth($primary-colors, 3);
 }
 
 .main__home .nosotros .container-tw {
@@ -275,8 +275,8 @@ main .loNuevo,
 
 /* Lo Nuevo seccion */
 .main__home .loNuevo {
-    background-color: #000;
-    color: #fff;
+    background-color: nth($primary-colors, 2);
+    color: nth($primary-colors, 3);
     z-index: 2;
 }
 
@@ -317,7 +317,7 @@ main .loNuevo,
 
 /* Artistas seccion */
 .main__home .artistas {
-    background-color: #fff;
+    background-color: nth($primary-colors, 3);
     z-index: 2;
 }
 
@@ -353,8 +353,8 @@ main .loNuevo,
 }
 
 .main__home .artistas .container-tw .artistas__container .text__container a:hover {
-    background-color: yellow;
-    color: #000;
+    background-color: nth($primary-colors, 1);
+    color: nth($primary-colors, 2);
 }
 
 .main__home .artistas .container-tw .artistas__container .gallery__container {
@@ -386,7 +386,7 @@ main .loNuevo,
 /* Servicios seccion */
 
 .main__home .servicios {
-    background-color: #fff;
+    background-color: nth($primary-colors, 3);
     z-index: 2;
 }
 
@@ -407,7 +407,7 @@ main .loNuevo,
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
     border-radius: 5px;
 }
 
@@ -431,7 +431,7 @@ main .loNuevo,
     font-size: 1rem;
     letter-spacing: unset;
     margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid nth($primary-colors, 2);
 }
 
 .main__home .servicios .container-tw .servicios__container .servicios-card .card-text p {
@@ -443,17 +443,17 @@ main .loNuevo,
     font-size: .8rem;
     font-weight: 400;
     margin-bottom: 20px;
-    color: #000;
+    color: nth($primary-colors, 2);
     position: absolute;
     bottom: 0;
     padding: 5px 12px;
     border-radius: 5px;
-    border: 1px solid #000;
+    border: 1px solid nth($primary-colors, 2);
 }
 
 .main__home .servicios .container-tw .servicios__container .servicios-card .card-text a:hover {
-    color: yellow;
-    background-color: #000;
+    color: nth($primary-colors, 1);
+    background-color: nth($primary-colors, 2);
 }
 
 
@@ -514,7 +514,7 @@ main .loNuevo,
 /* Contacto seccion */
 
 .main__home .contacto {
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
     z-index: 5;
 }
 
@@ -540,12 +540,12 @@ main .loNuevo,
 }
 
 .main__home .contacto .container-tw .contacto__container .social-icons a i {
-    color: #000;
+    color: nth($primary-colors, 2);
     margin-top: 50px;
 }
 
 .main__home .contacto .container-tw .contacto__container .social-icons a i:hover {
-    background-color: #fff;
+    background-color: nth($primary-colors, 3);
 }
 
 /* form */
@@ -587,7 +587,7 @@ input[type="email"] {
 
 .main__home .contacto .container-tw .contacto__container .form__container form div select {
     background-color: rgba(0, 0, 0, 0.569);
-    color: #fff;
+    color: nth($primary-colors, 3);
     border: none;
     padding: 5px;
     border-radius: 5px;
@@ -604,9 +604,9 @@ input[type="email"] {
 }
 
 .main__home .contacto .container-tw .contacto__container .form__container form input[type="submit"]:hover {
-    background-color: #fff;
-    color: #000;
-    outline: 1px solid #000;
+    background-color: nth($primary-colors, 3);
+    color: nth($primary-colors, 2);
+    outline: 1px solid nth($primary-colors, 2);
 }
 
 
@@ -614,8 +614,8 @@ input[type="email"] {
 /* ------FOOTER------ */
 footer {
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: nth($primary-colors, 2);
+    color: nth($primary-colors, 3);
     padding: 80px 100px;
     position: relative;
     z-index: 2;
@@ -647,14 +647,14 @@ footer .footer__container .footer__links-container .footer__btn-container .btn-s
     text-align: center;
     padding: 10px 16px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid nth($primary-colors, 3);
     margin: 10px;
-    color: #fff;
+    color: nth($primary-colors, 3);
 }
 
 footer .footer__container .footer__links-container .footer__btn-container .btn-s:hover {
-    border: 1px solid yellow;
-    color: yellow;
+    border: 1px solid nth($primary-colors, 1);
+    color: nth($primary-colors, 1);
 }
 
 footer .footer__container .footer__links-container .social-icons a i {
@@ -662,7 +662,7 @@ footer .footer__container .footer__links-container .social-icons a i {
 }
 
 footer .footer__container .footer__links-container .social-icons a i:hover {
-    color: yellow;
+    color: nth($primary-colors, 1);
 }
 
 footer .footer__container-copy {
@@ -756,7 +756,7 @@ footer .footer__container-copy {
 
 @media screen and (max-width:991px) {
     nav div .ul-bg {
-        background-color: yellow;
+        background-color: nth($primary-colors, 1);
         text-align: center;
         box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
     }
@@ -766,7 +766,7 @@ footer .footer__container-copy {
     }
 
     nav div div ul li .btn:hover {
-        border: 1px solid #fff;
+        border: 1px solid nth($primary-colors, 3);
     }
 }
 
@@ -888,17 +888,17 @@ footer .footer__container-copy {
     .header .hero__container .hero__title .h1_home {
         font-size: 68px;
         padding: 10px 20px;
-        color: yellow;
+        color: nth($primary-colors, 1);
     }
 
     .header .hero__container .hero__title .social-icons a i {
         /* color: #ffffff; */
-        background-color: yellow;
-        color: #000;
+        background-color: nth($primary-colors, 1);
+        color: nth($primary-colors, 2);
     }
 
     .header .hero__container .hero__title .social-icons a i:hover {
-        background-color: #fff;
+        background-color: nth($primary-colors, 3);
     }
 
     /* NOSOTROS index */
@@ -1119,7 +1119,7 @@ footer .footer__container-copy {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
     padding: 5px;
 }
 
@@ -1143,7 +1143,7 @@ footer .footer__container-copy {
 
 /* -------PRODUCTOR PAGE------- */
 .main__productor .productor__container-tw {
-    background-color: #000;
+    background-color: nth($primary-colors, 2);
     padding-top: 120px;
     height: auto;
 }
@@ -1153,7 +1153,7 @@ footer .footer__container-copy {
 }
 
 .main__productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i {
-    color: #000;
+    color: nth($primary-colors, 2);
 }
 
 .main__productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i:hover {
@@ -1226,7 +1226,7 @@ footer .footer__container-copy {
 
 .main__artistas .artistas .container-tw .artistas__grid .img__box div div h5 {
     font-size: 1.1rem;
-    color: yellow;
+    color: nth($primary-colors, 1);
 }
 
 .main__artistas .artistas .container-tw .artistas__grid .img__box div div p {
@@ -1346,8 +1346,8 @@ footer .footer__container-copy {
 }
 
 .main__tienda .tienda .container-tw .tienda__grid .tienda__card-tw .tienda__card-info .btn-xs:hover {
-    background-color: yellow;
-    color: #000;
+    background-color: nth($primary-colors, 1);
+    color: nth($primary-colors, 2);
 }
 
 
@@ -1394,7 +1394,7 @@ footer .footer__container-copy {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 20px;
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
     padding: 0 20px;
 }
 
@@ -1412,7 +1412,7 @@ footer .footer__container-copy {
     padding: 10px 14px;
     border-radius: 5px;
     background-color: #4FCE5D;
-    color: #fff;
+    color: nth($primary-colors, 3);
     width: fit-content;
     font-size: 1rem;
 }
@@ -1507,7 +1507,7 @@ footer .footer__container-copy {
 }
 
 .main__bar .bar .container-tw .bar__grid .bar__container-map .secundary__titles-pages span::selection {
-    background-color: yellow;
+    background-color: nth($primary-colors, 1);
 }
 
 .main__bar .bar .container-tw .bar__grid .bar__container-map div iframe {
