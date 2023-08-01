@@ -64,16 +64,14 @@ html {
 /* botones */
 
 .btn-l {
-    display: block;
     width: fit-content;
     min-width: 150px;
     padding: 16px 22px;
     background-color: #ffff00;
     color: #000;
-    border-radius: 5px;
-    text-align: center;
     font-size: 1.3rem;
     margin: 10px 0;
+    @extend %buttons;
 
     &:hover {
         background-color: #000000;
@@ -82,27 +80,33 @@ html {
 }
 
 .btn-m {
-    display: block;
     width: fit-content;
     min-width: 150px;
     padding: 12px 18px;
     background-color: #000;
     color: #fff;
-    border-radius: 5px;
-    text-align: center;
     font-size: 1.1rem;
+    @extend %buttons;
 }
 
+.btn-s {
+    width: 90px;
+    padding: 10px 16px;
+    border: 1px solid #fff;
+    margin: 10px;
+    color: #fff;
+    @extend %buttons;
+}
+
+
 .btn-xs {
-    display: block;
     width: fit-content;
     min-width: 100px;
     padding: 8px 14px;
     background-color: #000;
     color: #fff;
-    border-radius: 5px;
-    text-align: center;
     font-size: .8rem;
+    @extend %buttons;
 }
 
 .social-icons {
@@ -144,6 +148,7 @@ main {
         background-color: rgba(255, 255, 255, 0.7);
         padding: 40px;
         border-radius: 5px;
+        
 
         h3 {
             font-size: 1rem;

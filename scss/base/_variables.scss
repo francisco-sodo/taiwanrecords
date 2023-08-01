@@ -1,5 +1,7 @@
 // VARIABLES ///////////////////////////////////////////////
 $border-radius:5px;
+$primary-font: 'Lato';
+$brand-font: 'blank-river';
 // LISTAS ///////////////////////////////////////////////
 
 // COLORES //
@@ -22,9 +24,6 @@ linear-gradient(to bottom, black, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
 radial-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
 
 // FUENTES //
-$font-family:
-'Lato',
-'blank-river';
 $font-size:
 .7rem,
 .8rem,
@@ -45,3 +44,25 @@ $font-size:
 
 
 // EXTENDS ///////////////////////////////////////////////
+%buttons{
+    display: inline-block;
+    text-align: center;
+    border-radius:$border-radius;
+}
+
+
+// MIXINS ///////////////////////////////////////////////
+
+@mixin background-set($bg-size, $bg-repeat, $bg-position){
+    background-size:$bg-size;
+    background-repeat:$bg-repeat;
+    background-position:$bg-position;
+}
+
+@mixin flex($flex, $direction, $wrap, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content:$justify;
+    align-items:$align;
+}
