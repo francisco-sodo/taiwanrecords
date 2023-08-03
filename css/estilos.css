@@ -275,7 +275,7 @@ nav div div ul li .btn {
       justify-content: "";
       align-items: ""; }
       .main__home .loNuevo .container-tw .loNuevo__container .text__container p {
-        line-height: 1.3em;
+        line-height: 1.5em;
         font-weight: 300; }
     .main__home .loNuevo .container-tw .loNuevo__container .videos__container {
       width: 70%;
@@ -311,7 +311,7 @@ nav div div ul li .btn {
       .main__home .artistas .container-tw .artistas__container .text__container .section__subtitles {
         text-align: right; }
       .main__home .artistas .container-tw .artistas__container .text__container p {
-        line-height: 1.3em;
+        line-height: 1.5em;
         text-align: right;
         font-weight: 300; }
       .main__home .artistas .container-tw .artistas__container .text__container a {
@@ -1039,7 +1039,7 @@ footer {
         padding: 8px 12px;
         font-size: 0.9rem; }
         .main__bar .bar .container-tw .bar__grid .bar__container-info .bar__container-text a i {
-          font-size: 3rem; }
+          font-size: 1.2rem; }
       .main__bar .bar .container-tw .bar__grid .bar__container-info .bar__container-text p {
         margin-top: 10px;
         font-size: 0.9rem; }
