@@ -20,9 +20,6 @@
             }
 
             .nosotros__container {
-                // display: flex;
-                // justify-content: center;
-                // align-items: baseline;
                 @include flex(flex, row, nowrap, center, baseline);
 
                 p {
@@ -43,15 +40,10 @@
         .container-tw {
             .loNuevo__container {
                 width: 100%;
-                // display: flex;
-                // justify-content: space-between;
-                // align-items: center;
                 @include flex(flex, "", "", space-between, center);
 
                 .text__container {
                     width: 30%;
-                    // display: flex;
-                    // flex-direction: column;
                     gap: 20px;
                     margin-right: 10px;
                     @include flex(flex, column, "", "", "");
@@ -87,18 +79,12 @@
         .container-tw {
             .artistas__container {
                 width: 100%;
-                // display: flex;
-                gap: 40px;
-                // justify-content: space-between;
-                // align-items: center;
+                gap: 40px;  
                 @include flex(flex, "", "", space-between, center);
 
                 .text__container {
                     width: 30%;
-                    // display: flex;
-                    // flex-direction: column;
                     gap: 20px;
-                    // align-items: end;
                     @include flex(flex, column, "", "", end);
                     order: 2;
 
@@ -126,8 +112,6 @@
 
                 .gallery__container {
                     width: 70%;
-                    // display: flex;
-                    // flex-wrap: wrap;
                     gap: 5px;
                     @include flex(flex, "", wrap, "", "");
 
@@ -158,11 +142,7 @@
         .container-tw {
             .servicios__container {
                 width: 100%;
-                // display: flex;
-                // flex-wrap: wrap;
                 gap: 20px;
-                // justify-content: center;
-                // align-items: stretch;
                 margin: 0 auto;
                 @include flex(flex, "", wrap, center, stretch);
 
@@ -170,11 +150,9 @@
                     width: 260px;
                     min-height: 420px;
                     height: auto;
-                    // display: flex;
-                    // flex-direction: column;
-                    // justify-content: flex-start;
                     background-color: nth($primary-colors, 1);
                     border-radius: 5px;
+                    box-shadow: $box-shadow;
                     @include flex(flex, column, "", flex-start, "");
 
                     &:hover {
@@ -198,12 +176,13 @@
                             font-size: nth($font-size, 4);
                             letter-spacing: unset;
                             margin-bottom: 20px;
-                            border-bottom: 1px solid nth($primary-colors, 2);
+                            border-bottom: 1px dotted nth($primary-colors, 2);
                         }
 
                         p {
                             font-size: nth($font-size, 3);
                             padding-bottom: 50px;
+                            line-height: 1.3em;
                         }
 
                         a {
@@ -436,7 +415,8 @@
 
                 .img__box {
                     position: relative;
-
+                
+                    
                     &:hover {
                         a {
                             .artista__caption {
@@ -446,9 +426,11 @@
                     }
 
                     a {
+            
                         img {
                             width: 100%;
                             display: block;
+                    
                         }
 
                         .artista__caption {
@@ -460,14 +442,14 @@
                             height: 100%;
                             width: 100%;
                             opacity: 0;
-                            transition: .3s ease;
                             background-color: #000000;
+                            transition: .3s ease;
 
                             .artista__caption-name {
                                 color: white;
                                 font-size: nth($font-size, 6);
                                 position: absolute;
-                                top: 55%;
+                                top: 75%;
                                 left: 50%;
                                 -webkit-transform: translate(-50%, -50%);
                                 -ms-transform: translate(-50%, -50%);
@@ -530,24 +512,24 @@
 
                 .tienda__card-tw {
                     width: 100%;
-                    height: auto;
-                    // display: flex;
-                    // flex-direction: column;
+
+                    height: min-content;
+
                     background-color: nth($secundary-colors, 5);
                     border-radius: 5px;
                     overflow: hidden;
-                    // justify-items: center;
-                    // align-items: center;
-                    @include flex(flex, column, "nowrap", center, center);
+                    @include flex(flex, column, "nowrap", center, stretch);
 
                     .tienda__card-img {
                         overflow: hidden;
                         width: 100%;
+                        height: 100%;
 
                         img {
                             width: 100%;
                             transition: all .5s;
                             scale: 1;
+                            object-fit: cover;
 
                             &:hover {
                                 scale: 1.1;
@@ -679,10 +661,18 @@
                         gap: 5px;
 
                         figure {
+                            overflow: hidden;
+                            margin: 0;
+
                             .bar__img {
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
+                                transition: all .5s;
+                                scale: 1;
+                                &:hover {
+                                    scale: 1.1;         
+                                }
                             }
                         }
 
@@ -701,21 +691,6 @@
 
                         .bar__gallery__pic-img8 {
                             grid-column: span 2;
-                        }
-
-                        .bar__gallery__pic {
-                            position: relative;
-                            cursor: pointer;
-                            margin: 0;
-
-                            &:hover {
-                                &::before {
-                                    background: nth($gradients, 3);
-                                    content: "";
-                                    position: absolute;
-                                    inset: 0;
-                                }
-                            }
                         }
 
                     }
@@ -737,7 +712,7 @@
 
                     .secundary__titles-pages {
                         span {
-                            font-family: "blank-river";
+                            font-family: $brand-font;
                             display: inline-block;
                             font-size: nth($font-size, 12);
                             margin-top: 40px;
@@ -752,10 +727,7 @@
                     }
 
                     div {
-                        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-                        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-                        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-                        margin-right: 3px;
+                        box-shadow: $box-shadow;
 
                         iframe {
                             width: 760px;
