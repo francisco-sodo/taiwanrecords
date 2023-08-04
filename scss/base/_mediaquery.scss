@@ -244,11 +244,18 @@
 
     // /* video */
     .main__home {
-        .loNuevo__container {
-            .videos__container {
-                width: 100%;
-                padding: 0px;
-                margin: 0px;
+        .loNuevo {    
+            .container-tw {
+                .loNuevo__container { 
+                                
+                    .videos__container {
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                        background-color: transparent;
+
+                    }
+                }
             }
         }
     }
@@ -300,21 +307,16 @@
 
 
 
-
-
-
-
     }
 
     .main__home {
 
         // /* NOSOTROS index */
         .nosotros {
-            height: 400px;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-            padding: 30px 50px 100px 50px;
+            height: 500px;
+            position: relative;
+            padding: 20px 50px 20px 50px;
+
         }
 
         // /* LO NUEVO index */
@@ -322,6 +324,7 @@
             .container-tw {
                 .loNuevo__container {
                     gap: 20px;
+
 
                     .text__container {
                         width: 100%;
@@ -452,13 +455,17 @@
         // /* NOSOTROS */
         .nosotros {
             height: 380px;
-            padding: 0px 20px 0px 20px;
+            padding: 0 10px;
 
             .container-tw {
+
+
+
                 .nosotros__container {
+
                     p {
-                        min-width: 350px;
-                        font-size: nth($font-size, 3);
+
+                        font-size: nth($font-size, 2);
                     }
                 }
             }
@@ -544,6 +551,28 @@
         }
     }
 
+}
+
+// /* --------------MEDIA QUERIES 385px-------------- */
+@media screen and (max-width:385px) {
+
+    // /* NOSOTROS */
+    .nosotros {
+        .container-tw {
+            .nosotros__container {
+                p {
+                    padding: 10px;
+                    font-size: nth($font-size, 2);
+                }
+            }
+        }
+    }
+
+    .section__titles {
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
 }
 
 // /* --------------MEDIA QUERIES 350px-------------- */

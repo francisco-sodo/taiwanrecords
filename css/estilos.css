@@ -24,6 +24,7 @@ html body {
 /* contenedor general */
 .container-tw {
   max-width: 1200px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 100px 0 80px 0;
   overflow: hidden;
@@ -859,10 +860,11 @@ footer {
       padding: 8px 12px; } }
 
 @media screen and (max-width: 768px) {
-  .main__home .loNuevo__container .videos__container {
-    width: 100%;
+  .main__home .loNuevo .container-tw .loNuevo__container .videos__container {
     padding: 0px;
-    margin: 0px; } }
+    margin: 0px;
+    width: 100%;
+    background-color: transparent; } }
 
 @media screen and (max-width: 630px) {
   .header .hero__container {
@@ -888,11 +890,9 @@ footer {
       .header .hero__container .hero__title .social-icons a i:hover {
         background-color: #fff; }
   .main__home .nosotros {
-    height: 400px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding: 30px 50px 100px 50px; }
+    height: 500px;
+    position: relative;
+    padding: 20px 50px 20px 50px; }
   .main__home .loNuevo .container-tw .loNuevo__container {
     gap: 20px; }
     .main__home .loNuevo .container-tw .loNuevo__container .text__container {
@@ -946,10 +946,9 @@ footer {
     padding: 10px 30px; }
   .main__home .nosotros {
     height: 380px;
-    padding: 0px 20px 0px 20px; }
+    padding: 0 10px; }
     .main__home .nosotros .container-tw .nosotros__container p {
-      min-width: 350px;
-      font-size: 0.9rem; }
+      font-size: 0.8rem; }
   .main__home .servicios .container-tw .servicios__container {
     width: 100%; }
     .main__home .servicios .container-tw .servicios__container .servicios-card {
@@ -982,6 +981,14 @@ footer {
         gap: 15px; }
     footer .footer__container-copy {
       font-size: 0.7rem; } }
+
+@media screen and (max-width: 385px) {
+  .nosotros .container-tw .nosotros__container p {
+    padding: 10px;
+    font-size: 0.8rem; }
+  .section__titles {
+    margin-bottom: 30px;
+    text-align: center; } }
 
 @media screen and (max-width: 350px) {
   .main__home contacto .container-tw .contacto__container .form__container form {
