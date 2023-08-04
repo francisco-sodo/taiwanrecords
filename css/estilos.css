@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap");
+.btn-l, .btn-m, .btn-s, .btn-xs {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease; }
+
 /* LOGO FONT */
 @font-face {
   font-family: "blank-river";
@@ -51,20 +57,20 @@ html body {
   min-width: 150px;
   padding: 16px 22px;
   background-color: #ffff00;
-  color: #000;
-  font-size: 1.3rem;
+  color: #000000;
+  font-size: 1.2rem;
   margin: 10px 0; }
   .btn-l:hover {
     background-color: #000000;
-    color: #ffffff; }
+    color: #fff; }
 
 .btn-m {
   width: fit-content;
   min-width: 150px;
   padding: 12px 18px;
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 .btn-s {
   width: 90px;
@@ -77,9 +83,9 @@ html body {
   width: fit-content;
   min-width: 100px;
   padding: 8px 14px;
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
-  font-size: .8rem; }
+  font-size: 0.8rem; }
 
 .social-icons {
   display: inline-block; }
@@ -88,7 +94,8 @@ html body {
   .social-icons i {
     border-radius: 100%;
     padding: 5px;
-    font-size: 30px; }
+    font-size: 2rem;
+    transition: all 0.3s ease; }
 
 main .loNuevo,
 main .artistas,
@@ -97,6 +104,7 @@ main .tienda,
 main .bar,
 main .contacto {
   min-height: 100vh;
+  height: auto;
   position: relative;
   padding: 0 50px 0 50px; }
 
@@ -106,8 +114,11 @@ main .contacto {
   min-width: 350px;
   display: flex;
   flex-direction: column;
+  flex-wrap: "";
+  justify-content: "";
+  align-items: "";
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #e0e0e081;
   padding: 40px;
   border-radius: 5px; }
   .main__home .info-box h3 {
@@ -129,18 +140,18 @@ nav div .navbar-toggler {
       box-shadow: none; }
 
 nav div div ul li .nav-link {
-  font-size: .9rem; }
+  font-size: 0.9rem; }
 
 nav div div ul li .btn {
   margin-left: 10px;
-  font-size: .8rem; }
+  font-size: 0.8rem; }
   nav div div ul li .btn:hover {
     background-color: #ffff00;
-    color: #000;
+    color: #000000;
     border: 1px solid #ffff00; }
     nav div div ul li .btn:hover:focus {
       box-shadow: none;
-      background-color: #000;
+      background-color: #000000;
       border: 1px solid #000;
       color: #fff; }
 
@@ -149,7 +160,7 @@ nav div div ul li .btn {
 .main__titles-pages {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   position: relative; }
@@ -167,14 +178,9 @@ nav div div ul li .btn {
 
 .terciary__titles-pages {
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #363636;
   text-transform: uppercase; }
-
-.btn-l, .btn-m, .btn-s, .btn-xs {
-  display: inline-block;
-  text-align: center;
-  border-radius: 5px; }
 
 .header {
   width: 100%;
@@ -258,6 +264,24 @@ nav div div ul li .btn {
   background-color: #000000;
   color: #fff;
   z-index: 2; }
+  .main__home .loNuevo .container-tw .animation__container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    margin: auto; }
+    .main__home .loNuevo .container-tw .animation__container .text__animation {
+      color: #363636;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      white-space: nowrap;
+      animation: marquesina 40s linear alternate forwards infinite; }
+
+@keyframes marquesina {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-100%); } }
   .main__home .loNuevo .container-tw .loNuevo__container {
     width: 100%;
     display: flex;
@@ -333,7 +357,7 @@ nav div div ul li .btn {
         margin: 0; }
         .main__home .artistas .container-tw .artistas__container .gallery__container figure img {
           width: 100%;
-          transition: all .5s; }
+          transition: scale .2s ease-out; }
           .main__home .artistas .container-tw .artistas__container .gallery__container figure img:hover {
             scale: 1.1; }
 
@@ -356,6 +380,7 @@ nav div div ul li .btn {
       background-color: #ffff00;
       border-radius: 5px;
       box-shadow: 0px 3px 12px -3px rgba(0, 0, 0, 0.1);
+      transition: background-color .3s ease;
       display: flex;
       flex-direction: column;
       flex-wrap: "";
@@ -389,7 +414,8 @@ nav div div ul li .btn {
           bottom: 0;
           padding: 5px 12px;
           border-radius: 5px;
-          border: 1px solid #000000; }
+          border: 1px solid #000000;
+          transition: all .3s ease; }
           .main__home .servicios .container-tw .servicios__container .servicios-card .card-text a:hover {
             color: #ffff00;
             background-color: #000000; }
@@ -504,9 +530,11 @@ nav div div ul li .btn {
     color: #000000; }
     .main__productor .productor__container-tw .container .johny-info .johny-info-text .social-icons a i:hover {
       color: red; }
-  .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
-    height: 600px;
-    object-fit: cover; }
+  .main__productor .productor__container-tw .container .johny-info div .johny-carousel div {
+    height: auto; }
+    .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+      height: 100%;
+      object-fit: cover; }
   .main__productor .productor__container-tw .container .johny-info .premios div div div img {
     mix-blend-mode: difference; }
 
@@ -533,7 +561,7 @@ nav div div ul li .btn {
       width: 100%;
       opacity: 0;
       background-color: #000000;
-      transition: .3s ease; }
+      transition: opacity .3s ease; }
       .main__artistas .artistas .container-tw .artistas__grid .img__box a .artista__caption .artista__caption-name {
         color: white;
         font-size: 1.5rem;
@@ -543,8 +571,7 @@ nav div div ul li .btn {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        text-align: center;
-        cursor: pointer; }
+        text-align: center; }
         .main__artistas .artistas .container-tw .artistas__grid .img__box a .artista__caption .artista__caption-name p {
           color: #747474; }
     .main__artistas .artistas .container-tw .artistas__grid .img__box div div h5 {
@@ -566,7 +593,7 @@ nav div div ul li .btn {
   .main__tienda .tienda .container-tw .tienda__grid .tienda__card-tw {
     width: 100%;
     height: min-content;
-    background-color: #e0e0e0;
+    background-color: #e0e0e081;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -580,7 +607,7 @@ nav div div ul li .btn {
       height: 100%; }
       .main__tienda .tienda .container-tw .tienda__grid .tienda__card-tw .tienda__card-img img {
         width: 100%;
-        transition: all .5s;
+        transition: all .2s ease;
         scale: 1;
         object-fit: cover; }
         .main__tienda .tienda .container-tw .tienda__grid .tienda__card-tw .tienda__card-img img:hover {
@@ -640,7 +667,8 @@ nav div div ul li .btn {
       flex-direction: row-reverse;
       flex-wrap: "";
       justify-content: space-evenly;
-      align-items: center; }
+      align-items: center;
+      transition: background-color .3s ease; }
       .main__bar .bar .container-tw .bar__grid .bar__container-info .bar__container-text a:hover {
         background-color: #44b852; }
       .main__bar .bar .container-tw .bar__grid .bar__container-info .bar__container-text a i {
@@ -661,7 +689,7 @@ nav div div ul li .btn {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: all .5s;
+          transition: all .5s ease;
           scale: 1; }
           .main__bar .bar .container-tw .bar__grid .bar__container-gallery .bar__grid-gallery figure .bar__img:hover {
             scale: 1.1; }
@@ -967,7 +995,11 @@ footer {
 
 @media screen and (max-width: 1400px) {
   .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
-    height: 840px; } }
+    height: 870px; } }
+
+@media screen and (max-width: 1200px) {
+  .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {
+    height: 980px; } }
 
 @media screen and (max-width: 992px) {
   .main__productor .productor__container-tw .container .johny-info div .johny-carousel div img {

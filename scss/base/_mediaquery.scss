@@ -596,8 +596,33 @@
                     div {
                         .johny-carousel {
                             div {
+
                                 img {
-                                    height: 840px;
+                                    height: 870px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// /* -------MEDIA QUERIES PRODUCTOR PAGE 1200px------- */
+@media screen and (max-width:1200px) {
+    .main__productor {
+        .productor__container-tw {
+            .container {
+                .johny-info {
+                    div {
+                        .johny-carousel {
+                            div {
+
+                                img {
+                                    height: 980px;
+
                                 }
                             }
                         }

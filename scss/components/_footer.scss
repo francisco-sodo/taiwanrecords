@@ -9,10 +9,6 @@ footer {
     .footer__container {
         margin: 0 auto;
         max-width: 1400px;
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
-        // align-items: center;
         @include flex(flex, "", wrap, space-between, center);
 
         .footer__logo-container {
@@ -23,14 +19,12 @@ footer {
         }
 
         .footer__links-container {
-            // display: flex;
-            // flex-wrap: wrap;
-            // align-items: center;
             gap: 30px;
             @include flex(flex, "", wrap, "", center);
 
             .footer__btn-container {
                 .btn-s {
+                    // transition: all .3s ease;
                     &:hover {
                         border: 1px solid nth($primary-colors, 1);
                         color: nth($primary-colors, 1);
@@ -39,8 +33,11 @@ footer {
             }
             .social-icons {
                 a {
+                    
                     i {
                         color: #ffffff;
+                        // transition: color .3s ease;
+                        // transition: $transition-hover;
 
                         &:hover {
                             color: nth($primary-colors, 1);

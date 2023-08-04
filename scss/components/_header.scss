@@ -45,11 +45,13 @@
     
                     a {
                         margin: 10px;
+                        
     
                         i {
                             font-size: 40px;
                             color: nth($primary-colors, 2);
-    
+                            //transition: background-color .3s ease;
+                            // transition: $transition-hover;
                             &:hover {
                                 background-color: nth($primary-colors, 1);
                             }
