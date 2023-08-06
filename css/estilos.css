@@ -39,6 +39,8 @@ html body {
   text-align: left;
   font-family: 'Lato';
   font-weight: 600; }
+  .section__titles::selection {
+    background-color: #ffff00; }
 
 .section__subtitles {
   font-size: 1.2rem;
@@ -723,7 +725,7 @@ nav div div ul li .btn {
       margin-top: 40px;
       margin-left: 10px;
       font-weight: 100;
-      rotate: -3deg; }
+      transform: rotate(-5deg); }
       .main__bar .bar .container-tw .bar__grid .bar__container-map .secundary__titles-pages span::selection {
         background-color: #ffff00; }
     .main__bar .bar .container-tw .bar__grid .bar__container-map div {

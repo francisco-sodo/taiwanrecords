@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
 
+
 /* LOGO FONT */
 @font-face {
     font-family: "blank-river";
@@ -46,6 +47,9 @@ html {
     text-align: left;
     font-family: 'Lato';
     font-weight: 600;
+    &::selection {
+        background-color: nth($primary-colors, 1);
+    }
 }
 
 .section__subtitles {
