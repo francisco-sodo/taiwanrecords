@@ -196,13 +196,9 @@ nav div div ul li .btn {
     width: 100%;
     overflow: hidden;
     height: 100vh; }
-    .header .hero__container .hero__container-video {
-      width: auto;
+    .header .hero__container .hero__container-images {
       height: 60%;
       overflow: hidden; }
-      .header .hero__container .hero__container-video video {
-        width: 100%;
-        height: auto; }
     .header .hero__container .hero__title {
       height: calc(100vh - 100px - 60%);
       min-height: 200px;
@@ -778,7 +774,7 @@ footer {
       width: 280px; } }
 
 @media screen and (max-width: 1020px) {
-  .header .hero__container .hero__container-video {
+  .header .hero__container .hero__container-images {
     height: 50%; }
   .header .hero__container .hero__title {
     height: calc(100vh - 100px - 50%); }
@@ -876,11 +872,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: calc(100vh - 60px);
-    background-image: url("../img/hero-cover.jpg");
+    background-image: url("../img/hero-cover-mobile.jpg");
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center; }
-    .header .hero__container .hero__container-video {
+    .header .hero__container .hero__container-images {
       display: none; }
     .header .hero__container .hero__title .h1_home {
       font-size: 68px;

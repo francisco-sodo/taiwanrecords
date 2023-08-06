@@ -47,6 +47,7 @@ html {
     text-align: left;
     font-family: 'Lato';
     font-weight: 600;
+
     &::selection {
         background-color: nth($primary-colors, 1);
     }
@@ -72,12 +73,12 @@ html {
     width: fit-content;
     min-width: 150px;
     padding: 16px 22px;
-    background-color:nth($primary-colors, 1);
-    color:nth($primary-colors, 2);
+    background-color: nth($primary-colors, 1);
+    color: nth($primary-colors, 2);
     font-size: nth($font-size, 5);
     margin: 10px 0;
     @extend %buttons;
-    
+
     &:hover {
         background-color: nth($primary-colors, 2);
         color: nth($primary-colors, 3);
@@ -99,7 +100,7 @@ html {
     padding: 10px 16px;
     border: 1px solid #fff;
     margin: 10px;
-    color:nth($primary-colors, 3);
+    color: nth($primary-colors, 3);
     @extend %buttons;
 }
 
@@ -108,7 +109,7 @@ html {
     width: fit-content;
     min-width: 100px;
     padding: 8px 14px;
-    background-color:nth($primary-colors, 2);
+    background-color: nth($primary-colors, 2);
     color: nth($primary-colors, 3);
     font-size: nth($font-size, 2);
     @extend %buttons;
@@ -154,7 +155,7 @@ main {
         background-color: nth($secundary-colors, 5);
         padding: 40px;
         border-radius: 5px;
-        
+
 
         h3 {
             font-size: nth($font-size, 4);
@@ -205,9 +206,9 @@ nav {
 
                             &:focus {
                                 box-shadow: none;
-                                background-color:nth($primary-colors, 2);
+                                background-color: nth($primary-colors, 2);
                                 border: 1px solid #000;
-                                color:nth($primary-colors, 3);
+                                color: nth($primary-colors, 3);
                             }
                         }
                     }
@@ -228,7 +229,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 3px;
     position: relative;
-    
+
     span {
         position: absolute;
         top: 0;
@@ -247,6 +248,6 @@ nav {
 .terciary__titles-pages {
     font-weight: 400;
     font-size: nth($font-size, 2);
-    color:nth($secundary-colors, 3);
+    color: nth($secundary-colors, 3);
     text-transform: uppercase;
 }

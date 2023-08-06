@@ -37,11 +37,6 @@
         color: nth($primary-colors, 3);
         z-index: 2;
 
-
-
-
-
-
         .container-tw {
 
             .animation__container {
@@ -58,7 +53,7 @@
                     font-weight: bolder;
                     white-space: nowrap;
                     animation: marquesina 40s linear alternate forwards infinite;
-                    
+
 
                     @keyframes marquesina {
                         0% {
@@ -70,7 +65,7 @@
                         }
 
                     }
-                    
+
                 }
             }
 
@@ -136,7 +131,6 @@
 
                     a {
                         margin-top: 20px;
-                        // transition: $hover-transition;
 
                         &:hover {
                             background-color: #ffff00;
@@ -297,8 +291,6 @@
                             i {
                                 color: nth($primary-colors, 2);
                                 margin-top: 50px;
-                                // transition: background-color .3s ease;
-
                                 &:hover {
                                     background-color: nth($primary-colors, 3);
                                 }
@@ -394,8 +386,6 @@
                         a {
                             i {
                                 color: nth($primary-colors, 2);
-                                // transition: color .3s ease;
-
                                 &:hover {
                                     color: red;
                                 }
@@ -407,8 +397,9 @@
                 div {
                     .johny-carousel {
                         div {
-                            
+
                             height: auto;
+
                             img {
                                 height: 100%;
                                 object-fit: cover;
@@ -599,8 +590,6 @@
                             font-size: nth($font-size, 3);
                             font-weight: 300;
                             letter-spacing: 1px;
-                            // transition: all .3s ease; 
-
                             &:hover {
                                 background-color: #ffff00;
                                 color: nth($primary-colors, 2);

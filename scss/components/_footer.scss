@@ -24,20 +24,18 @@ footer {
 
             .footer__btn-container {
                 .btn-s {
-                    // transition: all .3s ease;
                     &:hover {
                         border: 1px solid nth($primary-colors, 1);
                         color: nth($primary-colors, 1);
                     }
                 }
             }
+
             .social-icons {
                 a {
-                    
+
                     i {
                         color: #ffffff;
-                        // transition: color .3s ease;
-                        // transition: $transition-hover;
 
                         &:hover {
                             color: nth($primary-colors, 1);
@@ -47,6 +45,7 @@ footer {
             }
         }
     }
+
     .footer__container-copy {
         margin-top: 60px;
         color: #888888;

@@ -30,7 +30,7 @@
     // /* HERO */
     .header {
         .hero__container {
-            .hero__container-video {
+            .hero__container-images {
                 height: 50%;
             }
 
@@ -226,17 +226,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
 
 // /* --------------MEDIA QUERIES 768px-------------- */
@@ -244,10 +233,10 @@
 
     // /* video */
     .main__home {
-        .loNuevo {    
+        .loNuevo {
             .container-tw {
-                .loNuevo__container { 
-                                
+                .loNuevo__container {
+
                     .videos__container {
                         padding: 0px;
                         margin: 0px;
@@ -274,12 +263,12 @@
             flex-direction: column;
             justify-content: center;
             height: calc(100vh - 60px);
-            background-image: url("../img/hero-cover.jpg");
+            background-image: url("../img/hero-cover-mobile.jpg");
             object-fit: cover;
             background-repeat: no-repeat;
             background-position: center;
 
-            .hero__container-video {
+            .hero__container-images {
                 display: none;
             }
 
