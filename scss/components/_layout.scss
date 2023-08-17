@@ -290,6 +290,7 @@
                             i {
                                 color: nth($primary-colors, 2);
                                 margin-top: 50px;
+
                                 &:hover {
                                     background-color: nth($primary-colors, 3);
                                 }
@@ -385,6 +386,7 @@
                         a {
                             i {
                                 color: nth($primary-colors, 2);
+
                                 &:hover {
                                     color: red;
                                 }
@@ -589,6 +591,7 @@
                             font-size: nth($font-size, 3);
                             font-weight: 300;
                             letter-spacing: 1px;
+
                             &:hover {
                                 background-color: #ffff00;
                                 color: nth($primary-colors, 2);

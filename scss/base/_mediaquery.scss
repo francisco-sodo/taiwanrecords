@@ -831,66 +831,6 @@
     }
 }
 
-// /* -------MEDIA QUERIES BAR PAGE 610px------- */
-@media screen and (max-width:610px) {
-
-    // /* INFO */
-    .main__bar {
-        .bar {
-            .container-tw {
-                .bar__grid {
-                    .bar__container-info {
-                        gap: 0;
-                        padding: 0;
-
-                        .bar__container-text {
-                            display: flex;
-                            flex-direction: column;
-                            padding: 20px;
-
-                            .secundary__titles-pages {
-                                font-size: nth($font-size, 5);
-                            }
-
-                            a {
-                                margin-top: 15px;
-                                padding: 8px 12px;
-                                font-size: nth($font-size, 3);
-
-                                i {
-                                    font-size: nth($font-size, 5);
-                                }
-                            }
-
-                            p {
-                                margin-top: 10px;
-                                font-size: nth($font-size, 3);
-                            }
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-
-    // /* GALLERY */
-    .main__bar {
-        .bar {
-            .container-tw {
-                .bar__grid {
-                    .bar__container-gallery {
-                        .bar__grid-gallery {
-                            grid-template-columns: 1fr 1fr;
-                            margin-bottom: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
 
 // /* -------MEDIA QUERIES BAR PAGE 610px------- */
 @media screen and (max-width:610px) {
@@ -943,6 +883,67 @@
                         div {
                             width: 100%;
                             margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// /* -------MEDIA QUERIES BAR PAGE 610px------- */
+@media screen and (max-width:610px) {
+
+    // /* INFO */
+    .main__bar {
+        .bar {
+            .container-tw {
+                .bar__grid {
+                    .bar__container-info {
+                        gap: 0;
+                        padding: 0;
+
+                        .bar__container-text {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 10px;
+
+                            .secundary__titles-pages {
+                                font-size: nth($font-size, 5);
+                            }
+
+                            a {
+                                margin-top: 15px;
+                                padding: 8px 12px;
+                                font-size: nth($font-size, 3);
+
+                                i {
+                                    font-size: nth($font-size, 5);
+                                }
+                            }
+
+                            p {
+                                margin-top: 10px;
+                                font-size: nth($font-size, 3);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    // /* GALLERY */
+    .main__bar {
+        .bar {
+            .container-tw {
+                .bar__grid {
+                    .bar__container-gallery {
+                        .bar__grid-gallery {
+                            grid-template-columns: 1fr 1fr;
+                            margin-bottom: 30px;
                         }
                     }
                 }
@@ -1037,6 +1038,32 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+}
+
+// /* -------MEDIA QUERIES BAR PAGE 400px------- */
+@media screen and (max-width:400px) {
+
+
+
+    // /* INFO */
+    .main__bar {
+        .bar {
+            .container-tw {
+                .bar__grid {
+                    .bar__container-info {
+
+                        .bar__container-text {
+                            a {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
                 }
             }
         }
